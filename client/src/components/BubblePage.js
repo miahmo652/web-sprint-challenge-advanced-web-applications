@@ -3,6 +3,7 @@ import axios from "axios";
 
 import Bubbles from "./Bubbles";
 import ColorList from "./ColorList";
+
 import {axiosWithAuth} from '../utils/axiosWithAuth'
 
 const BubblePage = () => {
@@ -24,6 +25,7 @@ const BubblePage = () => {
     <>
       <ColorList colors={colorList} updateColors={setColorList} />
       <Bubbles colors={colorList} />
+    
     </>
   );
 };

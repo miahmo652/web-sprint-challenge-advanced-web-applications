@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
-
+import AddColor from './AddColor';
 const initialColor = {
   color: "",
   code: { hex: "" }
@@ -99,6 +99,7 @@ window.location.reload()
           </div>
         </form>
       )}
+      <AddColor />
       <div className="spacer" />
       {/* stretch - build another form here to add a color */}
   
